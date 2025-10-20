@@ -1,0 +1,98 @@
+/* CSS variables & base color pulled from your preference: #020634 (navy) */
+:root {
+    --navy: #020634;
+    --ink: #0f172a;
+    --muted: #64748b;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --accent: #3b82f6;
+  }
+  
+  /* Tag selector example (applies styles to an HTML tag) */
+  body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+    margin: 0; /* box model property #1 */
+  }
+  
+  /* Another tag selector to demonstrate specificity */
+  h1, h2 {
+    margin: 0 0 0.5rem 0;
+    letter-spacing: 0.2px;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto; /* box model property #2 */
+    padding: 1.25rem; /* box model property #3 */
+  }
+  
+  /* ID selector: apply & style #hero */
+  #hero {
+    background: radial-gradient(1200px 500px at 20% 0%, rgba(2,6,52,0.15), transparent),
+                var(--navy);
+    color: white;
+    padding: 4rem 0; /* box model property #4 */
+    border-bottom: 4px solid rgba(255,255,255,0.08); /* box model property #5 */
+  }
+  
+  .lead {
+    color: #e2e8f0;
+    max-width: 60ch;
+    margin-bottom: 1rem;
+  }
+  
+  /* Reusable class styled and applied to at least two elements: .card */
+  .card {
+    background: var(--card);
+    padding: 1.25rem;           /* box model property */
+    margin: 1rem 0;             /* box model property */
+    border: 1px solid #e5e7eb;  /* box model property */
+    border-radius: 14px;        /* box model property */
+    box-shadow: 0 6px 20px rgba(2, 6, 52, 0.06);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;        /* box model-adjacent visual */
+    display: block;
+    margin: 0.5rem 0 0.75rem 0; /* box model property */
+  }
+  
+  /* Button styling (link as button) */
+  .button {
+    display: inline-block;
+    background: white;
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.7rem 1rem;       /* box model property */
+    border-radius: 10px;        /* box model property */
+    border: 2px solid #ffffff;
+    transition: transform 120ms ease, background 120ms ease, color 120ms ease;
+  }
+  
+  /* Link hover color requirement (CSS selector that changes <a> color on hover) */
+  a:hover {
+    color: var(--accent);
+  }
+  
+  /* Button-specific hover/active */
+  .button:hover {
+    background: transparent;
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
+  
+  .footer {
+    padding-bottom: 2rem;
+    color: var(--muted);
+  }
+  
+  .footer a {
+    text-decoration: underline;
+  }
+  

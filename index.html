@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>George Paul — Personal Site</title>
+
+  <!-- Correct meta description for search engines -->
+  <meta name="description" content="George Paul's personal site: projects, fitness app work, and contact links." />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+  <!-- Section 1 (uses <div>) -->
+  <header id="hero">
+    <div class="container">
+      <h1>Hi, I'm George 👋</h1>
+      <p class="lead">
+        I build AI-powered fitness software and love clean, fast UIs.
+      </p>
+
+      <!-- External link using <a> -->
+      <a class="button" href="https://github.com/yourgithubusername" target="_blank" rel="noopener">
+        Visit my GitHub
+      </a>
+    </div>
+  </header>
+
+  <!-- Section 2 (uses <div>) -->
+  <main class="container">
+    <!-- Class applied to at least two elements: .card -->
+    <div class="card">
+      <h2>Featured Project: Ascend Fitness</h2>
+      <!-- Safe-for-work image -->
+      <img
+        src="https://picsum.photos/seed/ascend-fitness/800/450"
+        alt="Abstract placeholder representing a mobile fitness app UI" />
+      <p>
+        An iOS app with AI physique analysis, LiDAR meal volume estimates, and Firebase back end.
+        It blends computer vision with LLMs to help people hit their goals.
+      </p>
+      <p>
+        <a href="https://yourgithubusername.github.io" target="_blank" rel="noopener">See my live site</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I'm an ECE student at UT Austin focused on full-stack, ML, and delightful product design.
+        Outside of code, I enjoy lifting, running, and learning fast.
+      </p>
+      <ul>
+        <li>Languages: Python, Swift, Java, C/C++</li>
+        <li>Frameworks: React, Spring Boot, Flask, SwiftUI</li>
+        <li>Cloud: AWS, Firebase, PCF</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    <small>
+      © <span id="year"></span> George Paul •
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    </small>
+  </footer>
+
+  <script>
+    // simple year update (no requirement, just nice)
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
